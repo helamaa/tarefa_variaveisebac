@@ -1,20 +1,31 @@
-public class variaveis {
+import java.util.Scanner;
 
+public class variaveis
+{
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        int num1 = 1;
-        int num2 = 2;
+        double nota1, nota2, nota3, nota4, soma, media;
 
-        int num3 = num1 + num2;
-        int num4 = num1 - num2;
-        int num5 = num1 * num2;
-        int num6 = num1 / num2;
+        System.out.println("Digite a primeira nota:");
+        nota1 = scanner.nextDouble();
 
-        System.out.println(num3);
-        System.out.println(num4);
-        System.out.println(num5);
-        System.out.println(num6);
+        System.out.println("Digite a segunda nota:");
+        nota2 = scanner.nextDouble();
+
+        System.out.println("Digite a terceira nota:");
+        nota3 = scanner.nextDouble();
+
+        System.out.println("Digite a quarta nota:");
+        nota4 = scanner.nextDouble();
+
+        soma = nota1 + nota2 + nota3 + nota4;
+
+        media = soma / 4;
+
+        System.out.println("A média do aluno é: " + media);
+
+        scanner.close();
     }
-
-
 }
+
